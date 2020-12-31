@@ -35,6 +35,7 @@
                         <li class="nav_item"><a href="#experience" class="nav_link">Experience</a></li>
                         <li class="nav_item"><a href="#works" class="nav_link">Works</a></li>
                         <li class="nav_item"><a href="#contact" class="nav_link">Contact Me</a></li>
+                        <li class="nav__item"><div class="nav__link" onclick="enableDarkMode()"><i class='bx bxs-adjust'></i> Light/Dark</div></li>
                     </ul>
                 </div>
             </nav>
@@ -343,5 +344,11 @@
         
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script>
+            function enableDarkMode(){
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
     </body>
 </html>
