@@ -576,7 +576,7 @@ img{
 
 .footer_copy{
   font-size: var(--smaller-font-size);
-  color: var(--text-colour);
+  color: var(--first-colour);
 }
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
@@ -658,4 +658,13 @@ img{
     grid-template-columns: repeat(3, 1fr);
   }
 
+}
+
+.dark-mode{
+  --first-colour: #CC4B2C;
+  --first-colour-dark: #ebd5d0;
+  --first-colour-darken: #ebd5d0;
+  --text-colour:#EAE7E6 ;
+  --first-colour-light: #EAE7E6;
+  --first-colour-lighten: black;
 }
