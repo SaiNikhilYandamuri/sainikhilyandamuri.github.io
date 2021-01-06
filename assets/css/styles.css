@@ -393,8 +393,13 @@ img{
 .skills_gradle{
   width: 70%;
 }
-.skills_maven{
+
+.skills_ant{
   width: 70%;
+}
+
+.skills_maven{
+  width: 60%;
 }
 /* ===== EDUCATION =====*/
 .education_year{
