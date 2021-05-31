@@ -1,360 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="zxx">
+<head>
+  <meta charset="utf-8">
+  <title>Personal Portfolio Website</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- font awesome -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <!-- main css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<!--header start-->
+<header class="header">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="logo">
+        <a href="index.html">N</a>
+      </div>
+      <div class="hamburger-btn outer-shadow hover-in-shadow">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+<!--header end-->
 
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Portfolio | Nikhil</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div class="nav_toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>              
-                <div>
-                    <a href="#"class="nav_logo">nikhil.</a>
-                </div>
-
-                <div class="nav_menu" id="nav-menu">
-                    <div class="nav_close" id="nav-close">
-                        <i class='bx bx-x' ></i>
-                    </div>
-
-                    <ul class="nav_list">
-                        <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
-                        <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
-                        <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
-                        <li class="nav_item"><a href="#experience" class="nav_link">Experience</a></li>
-                        <li class="nav_item"><a href="#works" class="nav_link">Works</a></li>
-                        <li class="nav_item"><a href="#contact" class="nav_link">Contact Me</a></li>
-                        <li class="nav__item"><div class="nav__link" onclick="enableDarkMode()"><i class='bx bxs-adjust'></i> Light/Dark</div></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home_container bd-grid">
-                    <div class="home_data">
-                        <div class="home_img">
-                            <img src="assets/img/perfil.png" alt="">
-                        </div>
-                        <h1 class="home_title">Sai Nikhil Yandamuri</h1>
-                        <span class="home_profession">Software Developer</span>
-                        <div class="home_social">
-                            <a href="https://www.linkedin.com/in/sai-nikhil-y-928184140/" target="_blank" class="home_social-link"><i class='bx bxl-linkedin'></i></a>
-                            <a href="https://github.com/SaiNikhilYandamuri" target="_blank" class="home_social-link"><i class='bx bxl-github'></i></a>
-                        </div>
-                        <a download href="assets/resume/Nikhil.pdf" class="button home_button">Download Resume</a>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About Me</h2>
-
-                <div class="about_container bd-grid">
-                    <div class="about_data">
-                        <p class="about_description">Hi, I am innovative problem seeker having experience in MERN Stack, Java & Automation, having 2.5+ years experience in Software Development. I have experience in participating in all phases of software development. I have well-developed time management skills, attention to detail and ability to convert soltion to code.</p>
-                    </div>
-                    <div>
-                        <div class="about_information">    
-                            <h3 class="about_information-title">Information</h3>
-    
-                            <div class="about_information-data">
-                                <i class='bx bx-user about_information-icon' ></i>
-                                <span>Sai Nikhil Yandamuri</span>
-                            </div>
-    
-                            <div class="about_information-data">
-                                <i class='bx bx-envelope about_information-icon' ></i>
-                                <span>nikhi.yandamuri@gmail.com</span>
-                            </div>
-                        </div>
-                        <div class="about_information">    
-                            <h3 class="about_information-title">Experience</h3>
-    
-                            <div class="about_information-data">
-                                <i class='bx bx-medal about_information-icon' ></i>
-                                <div>
-                                    <span class="about_information-subtitle">2.5+ Years Job</span>
-                                    <span class="about_information-subtitle-small">Experience</span>
-                                </div>
-                                
-                            </div>
-    
-                            <div class="about_information-data">
-                                <i class='bx bx-briefcase about_information-icon' ></i>
-                                <div>
-                                    <span class="about_information-subtitle">10+ Projects</span>
-                                    <span class="about_information-subtitle-small">Completed</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">My expertise</h2>
-
-                <div class="skills_container bd-grid">  
-                    <div class="skills_content">
-                        <h3 class="skills_subtitle">Backend</h3>
-
-                        <div class="skills_data">
-                            <span class="skills_name">Java</span>
-                            <span class="skills_number">55%</span>
-                            <span class="skills_bar skills_java"></span>
-                        </div>
-
-                        <div class="skills_data">
-                            <span class="skills_name">NodeJS</span>
-                            <span class="skills_number">50%</span>
-                            <span class="skills_bar skills_node"></span>
-                        </div>                        
-
-                    </div>
-
-                    <div class="skills_content">
-                        <h3 class="skills_subtitle">Frontend</h3>
-
-                        <div class="skills_data">
-                            <span class="skills_name">HTML/CSS</span>
-                            <span class="skills_number">60%</span>
-                            <span class="skills_bar skills_html"></span>
-                        </div>
-
-                        <div class="skills_data">
-                            <span class="skills_name">ReactJS</span>
-                            <span class="skills_number">40%</span>
-                            <span class="skills_bar skills_react"></span>
-                        </div>
-                    </div>
-
-                    <div class="skills_content">
-                        <h3 class="skills_subtitle">APIs</h3>
-
-                        <div class="skills_data">
-                            <span class="skills_name">GraphQL</span>
-                            <span class="skills_number">60%</span>
-                            <span class="skills_bar skills_graphql"></span>
-                        </div>
-                    </div>
-
-                    <div class="skills_content">
-                        <h3 class="skils_subtitle">Automation Tools</h3>
-
-                        <div class="skills_data">
-                            <span class="skills_name">Chef</span>
-                            <span class="skills_number">75%</span>
-                            <span class="skills_bar skills_chef"></span>
-                        </div>
-
-                        <div class="skills_data">
-                            <span class="skills_name">Gradle</span>
-                            <span class="skills_number">70%</span>
-                            <span class="skills_bar skills_gradle"></span>
-                        </div>
-
-                        <div class="skills_data">
-                            <span class="skills_name">ANT</span>
-                            <span class="skills_number">70%</span>
-                            <span class="skills_bar skills_ant"></span>
-                        </div>
-                        
-                        <div class="skills_data">
-                            <span class="skills_name">Maven</span>
-                            <span class="skills_number">60%</span>
-                            <span class="skills_bar skills_maven"></span>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <!--===== CERTIFICATION =====-->
-            <section class="about section">
-                <h2 class="section-title">My Certifications</h2>
-                <div class="cert_container bd-grid">  
-                    <div class="skills_content">
-                        <div class="about-information-data">
-                            <i class='bx bx-certification about_information-icon'></i>
-                            <div>
-                                <span class="about_information-subtitle">Enterprise Design Thinking Practitioner</span>
-                                <span class="about_information-subtitle-small">Issued on: July 2020</span>
-                                <div>
-                                    <span class="about_information-subtitle-small"><a href="https://www.youracclaim.com/badges/5055a005-c0a0-46ab-b953-cdf13648d20a" target="_blank" > <i class='bx bx-check-square cert_information-icon'></i>See Credential</a></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="about-information-data">
-                            <i class='bx bx-certification about_information-icon'></i>
-                            <div>
-                                <span class="about_information-subtitle">Productivity Tips: Finding Your Productive Mindset</span>
-                                <span class="about_information-subtitle-small">Issued on: April 2020</span>
-                            </div>
-                        </div>
-
-                        <div class="about-information-data">
-                            <i class='bx bx-certification about_information-icon'></i>
-                            <div>
-                                <span class="about_information-subtitle">Verified International Academic Qualifications</span>
-                                <span class="about_information-subtitle-small">Issued on: Febrauary 2020</span>
-                                <div>
-                                    <span class="about_information-subtitle-small"><a href="https://www.youracclaim.com/badges/413f9fc9-cae0-4d99-8f22-8b17a573c3f2" target="_blank" > <i class='bx bx-check-square cert_information-icon'></i>See Credential</a></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== EDUCATION =====-->
-            <section class="about section">
-                <h2 class="section-title">My Education</h2>
-
-                <div class="cert_container bd-grid">
-                    <div class="about_information-data">
-                        <i class="bx bxs-book-open about_information-icon"></i>
-                        <div>
-                            <h3 class="education_year">Starting Spring 2021</h3>
-                            <div class="education_degree">Master of Science in Computer Software Engineering</div>
-                            <div class="eduation_unversity">San Jose State University</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cert_container bd-grid">
-                    <div class="about_information-data">
-                        <i class="bx bxs-book-open about_information-icon"></i>
-                        <div>
-                            <h3 class="education_year">2014-2018</h3>
-                            <div class="education_degree">Bachelor of Technology in Computer & Communication Engineering</div>
-                            <div class="eduation_unversity">Manipal Institute of Technology</div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--===== EXPERIENCE =====-->
-            <section class="exprerience section" id="experience">
-                <h2 class="section-title">My Experience</h2>
-
-                <div class="experience_container bd-grid">
-                    <div class="experience_content">
-                        <div class="experience_time">
-                            <span class="experience_rounder"></span>
-                            <span class="experience_line"></span>
-                        </div>
-                        <div>
-                            <h3 class="experience_designation">Software Engineer</h3>
-                            <h3 class="experience_company">Cerner Corporation</h3>
-                            <span class="experience_year">July 2018 - December 2020</span>
-                        </div>
-                    </div>
-
-                    <div class="experience_content">
-                        <div class="experience_time">
-                            <span class="experience_rounder"></span>
-                            <span class="experience_line"></span>
-                        </div>
-                        <div>
-                            <h3 class="experience_designation">Software Intern</h3>
-                            <h3 class="experience_company">Cerner Corporation</h3>
-                            <span class="experience_year">January 2018 - July 2018</span>
-                        </div>
-                    </div>
-
-                    <div class="experience_content">
-                        <div class="experience_time">
-                            <span class="experience_rounder"></span>
-                            <span class="experience_line"></span>
-                        </div>
-                        <div>
-                            <h3 class="experience_designation">Summer Intern</h3>
-                            <h3 class="experience_company">IMIMobile Pvt Ltd.</h3>
-                            <span class="experience_year">May 2017 - July 2017</span>
-                        </div>
-                    </div>
-                </div>                
-            </section>
-            <!--===== WORKS =====-->
-            
-
-            <section class="works section" id="works"> 
-                <h2 class="section-title">Recent Works</h2>
-
-                <div class="works__container bd-grid">
-                    <div class="works_img">
-                        <img src="assets/img/book-list.PNG" alt="">
-                        
-                        <div class="works_data">
-                            <a href="https://github.com/SaiNikhilYandamuri/Book-List" target="_blank" class="works_link"><i class='bx bx-link-alt' ></i></a>
-                            <span class="works_title">Book List MERN Stack</span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-
-            </section>
-
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Get in Touch</h2>
-                <div class="contact_container bd-grid">
-                    <div class="conact_info">
-                        <h3 class="contact_subtitle">E-mail</h3>
-                        <span class="contact_text">nikhi.yandamuri@gmail.com</span>
-                    </div>
-
-                    <div class="contact_info">
-                        <h3 class="contact_subtitle">Location</h3>
-                        <span class="contact_text">San Jose, California, USA</span>
-                    </div>
-                </div>
-            </section>
-
-
-        </main>
-
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer_container bd-grid">
-                <h1 class="footer_title">Sai Nikhil Yandamuri</h1>
-                <p class="footer_description">I am Nikhil and this is my portfolio, contact me here.</p>
-
-                <div class="footer_social">
-                    <a href="https://www.facebook.com/sai.n.yandamuri/" target="_blank" class="footer_link"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/helloitsnikhil/" target="_blank" class="footer_link"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://www.linkedin.com/in/sai-nikhil-y-928184140/" target="_blank" class="footer_link"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://medium.com/@nikhi.yandamuri" target="_blank" class="footer_link"><i class='bx bxl-medium'></i></a>
-                </div>
-
-                <p class="footer_copy">All rights reserved by Nikhil - 2020</p>
-            </div>
-        </footer>
-        
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-        <script>
-            function enableDarkMode(){
-                var element = document.body;
-                element.classList.toggle("dark-mode");
-            }
-        </script>
-    </body>
+<!--navigation menu start-->
+<nav class="nav-menu">
+  <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+  <div class="nav-menu-inner">
+    <ul>
+      <li><a href="#" class="inner-shadow active">Home</a></li>
+      <li><a href="#" class="outer-shadow hover-in-shadow">About</a></li>
+      <li><a href="#" class="outer-shadow hover-in-shadow">Portfolio</a></li>
+      <li><a href="#" class="outer-shadow hover-in-shadow">Contact</a></li>
+    </ul>
+  </div>
+  <!--copyright text-->
+  <p class="copyright-text">&copy; 2021 Sai Nikhil Yandamuri</p>
+</nav>
+<!--navigation menu end-->
+<!--home section start-->
+<section class="home-section section">
+  <!--effect wrap start-->
+  <div class="effect-wrap">
+    <div class="effect effect-1"></div>
+    <div class="effect effect-2">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="effect effect-3"></div>
+    <div class="effect effect-4"></div>
+    <div class="effect effect-5">
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+  </div>
+  <!--effect wrap end-->
+  <div class="container">
+    <div class="row full-screen align-items-center">
+      <div class="home-text">
+        <p>Hello</p>
+        <h2>I am Nikhil.</h2>
+        <h1>Full Stack Developer</h1>
+        <a href="#" class="btn-1 outer-shadow hover-in-shadow">More About Me</a>
+      </div>
+      <div class="home-img">
+        <div class="img-box inner-shadow">
+          <img src="img/profile-pic.png" class="outer-shadow" alt="profile-pic">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--home section end-->
+<!--about section start-->
+<section class="about-section section">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2 data-heading="main info">About Me</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="about-img">
+        <div class="img-box inner-shadow">
+          <img src="img/profile-pic.png" class="outer-shadow" alt="profile-pic">
+        </div>
+      </div>
+      <div class="about-info">
+        <p><span>Hi. I'm Sai Nikhil Yandamuri.</span>I am innovative problem seeker having experience in MERN Stack, Java & Automation, having 2.5+ years experience in
+        Software Development. I have experience in participating in all phases of software development. I have well-developed
+        time management skills, attention to detail and ability to convert soltion to code.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--about section end-->
+<!-- main js -->
+<script src="js/main.js"></script>
+<!-- style switcher js -->
+<script src="js/style-switcher.js"></script>
+</body>
 </html>
+
