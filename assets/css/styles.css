@@ -368,28 +368,85 @@ img{
 }
 
 .skills_java{
-  width: 55%;
+  width: 75%;
+}
+
+.skills_js{
+  width: 75%;
+}
+
+.skills_python{
+  width: 50%;
+}
+
+.skills_aws{
+  width: 50%;
+}
+
+.skills_chef{
+  width: 75%;
+}
+
+.skills_docker{
+  width: 25%;
+}
+
+.skills_git{
+  width: 75%;
+}
+
+.skills_mysql{
+  width: 75%;
+}
+
+.skills_mongodb{
+  width: 75%;
+}
+
+.skills_mssql{
+  width: 75%;
 }
 
 .skills_node{
-  width: 50%;
+  width: 85%;
+}
+
+.skills_react{
+  width: 75%;
 }
 
 .skills_html{
   width: 60%;
 }
 
-.skills_react{
-  width: 40%;
+.skills_rest{
+  width: 80%;
 }
 
 .skills_graphql{
-  width: 60%;
+  width: 70%;
 }
 
-.skills_chef{
-  width: 75%;
+.skills_grpc{
+  width: 40%;
 }
+
+.skills_junit{
+  width: 50%;
+}
+
+.skills_mochajs{
+  width: 50%;
+}
+
+.skills_reacttest{
+  width: 50%;
+}
+
+.skills_chefspec{
+  width: 70%;
+}
+
 .skills_gradle{
   width: 70%;
 }
@@ -487,6 +544,7 @@ img{
   position: relative;
   overflow: hidden;
   border-radius: .5rem;
+  padding: 5px 5px 5px 5px;
 }
 
 .works_data{
